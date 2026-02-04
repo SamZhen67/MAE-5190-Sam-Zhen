@@ -267,7 +267,6 @@ With the Artemis board having 384 kB of RAM, approximately 7384 temperature read
 
 2) Reliability: What happens when you send data at a higher rate from the robot to the computer? Does the computer read all the data published (without missing anything) from the Artemis board? Include your answer in the write-up.
 
-
 <h3> Discussion </h3>
 
 In Lab 1B, I learned how to receive timestamped messages from the Artemis board using the notification handler in the Python notebook. One large takeaway from this lab is the difference in sending data on each loop iteration and sending data that is collected in an array. No significant issues came up during this lab. 
