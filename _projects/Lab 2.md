@@ -195,6 +195,10 @@ With a high alpha value, the filter relies more on the accelerometer data than t
 <h3> Sample Data </h3>
 ___
 
+Within my code, I do not use the command `if (myICM.dataReady())` and instead explictly call for `myICM.getAGMT()`. By using this method, it does not need to wait if the data is ready and allows me to directly collect data from the IMU once it is updated. Currently, there are no delays inserted the code for debugging nor any Serial.print statements. 
+
+For the storage of data, it is more sensible to store separate arrays for accelerometer and gryoscope data. This allows for simpler code in which each set of data is in its respective array that is also smaller in size. It also allows for the collection of data for one sensor at a time while not needing to collect data from both sensors. The best data type to store your data is the one that takes the least amount of space. From the given data types, unsigned longs should not be used as they cannot store negative values. Strings and doubles also take more space, so floats are the best data type to be space-efficient. 
+
 <h3> Record a Stunt </h3>
 ___
 
