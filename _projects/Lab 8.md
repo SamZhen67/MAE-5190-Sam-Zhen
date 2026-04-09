@@ -32,7 +32,7 @@ Once the turn is completed, the robot returns to the FORWARD STATE, which is the
 
 <h2> Videos </h2>
 
-In each video, the robot starts approximately 3 meters from the wall due to space constraints. The neon yellow tape indicates 3 feet from the wall. 
+In each video, the robot starts approximately 3 meters from the wall due to space constraints. The neon yellow tape indicates 3 feet from the wall. Due to the friction of the floor, I was unable to have the robot rotate about its center during the drift similar to the example shown in the lab prompt. Instead, each drift consists of the robot visually performing a variable-radius turn with a differential PWM input as the wheels slide at the beginning of the turn and quickly regaining traction to complete the 180-degree turn. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6akg-53b5PA?si=WhdVjTmvAz121zoC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
